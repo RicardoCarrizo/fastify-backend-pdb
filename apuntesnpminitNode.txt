@@ -1,0 +1,28 @@
+##############clase 12##################
+fastify y expresjs son backend frameworks
+
+fastify tiene distintos metodos de http requests (GET, PUT, PATH, POST, DELETE, ETC) (server.js)
+
+
+cambio "main": "index.js" por ---> ""server.js", 
+
+"start": "node server.js", ---> creo start para configurar como iniciar el proyecto
+"dev": "nodemon server.js", ---> usamos nodemon, comando para elegir como queremos que se ejecute el entorno de desarrollo, usamos programa nodemon este cada vez que modificamos un archivo, reinicia el server (como un create en springboot properties), 
+                                nodemon es una devDependencies pq no la necesitamos en produccion, estas depéndencias se crean al recibir ejecutar el comando npm run dev.
+                                Se explica que es nodemon en el clase 12 45:30
+        
+        comando npm run dev ---> recibe el string de "dev" en este caso recibe  "nodemon server.js" ya no se necesita escribir ese string en el comando, si el string cambia o crece, siempre se ejecutara el mismo comando npm run dev 
+                     al ejecutar el comando anterior se inicia el servidor de fastify
+                     este nos indica el puerto, se comprueba el hello world del server.js en http://localhost:3000/
+
+devDependencies ---> son solo las dependencias que se usan para desarrollo clase 12 43:01
+dependencies ---> son las nmecesarias para ejecutar en producccion
+
+(consultar https://www.fastify.io/ 
+
+- en la imagen de apuntes react npm install fastify  el --save es para que agrege la dependencia de fastify a los paquetes de json
+
+
+)
+
+git ignore ---> agrega carpetas o archivos que no quiero subir al repositorio
